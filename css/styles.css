@@ -239,31 +239,6 @@ img {
 .detail-item + .detail-item {
   margin-left: 30px;
 }
-/* .detail-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-} */
-
-/* .icon-antenna::before {
-  background-image: url('../images/icons/antenna.svg');
-}
-
-.icon-clock::before {
-  background-image: url('../images/icons/clock.svg');
-}
-
-.icon-diagram::before {
-  background-image: url('..//images/icons/diagram.svg');
-}
-
-.icon-astronaut::before {
-  background-image: url('..//images/icons/astronaut.svg');
-} */
 
 .detail-title {
   font-weight: 700;
@@ -354,7 +329,8 @@ img {
   margin-left: 10px;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--rare-color);
   color: #ffffff;
 }
@@ -384,7 +360,8 @@ img {
   border: 1px solid;
   border-radius: 4px;
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--rare-color);
 }
 .client-icon {
@@ -424,10 +401,10 @@ img {
 }
 .footer-nav {
   display: flex;
+  align-items: baseline;
 }
 .connect {
   margin-left: 70px;
-  margin-top: 12px;
 }
 .connect-icon {
   background: rgba(255, 255, 255, 0.1);
@@ -461,6 +438,8 @@ img {
 .btn-filter:focus {
   color: var(--white-color);
   background-color: var(--btn-bg-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* --Карточки работ-- */
 .project-card-title {
@@ -473,6 +452,7 @@ img {
 
 .card-link {
   text-decoration: none;
+  display: block;
 }
 
 .project-card-text {
@@ -522,7 +502,7 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.project-list:hover {
+.card-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
