@@ -7,6 +7,7 @@
   --link-address-color: rgba(255, 255, 255, 0.6);
   --white-color: #ffffff;
   --btn-active-color: #188ce8;
+  --bghero-color: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -126,8 +127,17 @@ ul {
 }
 
 /* --Hero-- */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background/bghero.jpg');
+  background-color: #c4c4c4;
+}
 .hero {
-  background-color: var(--bgc-section-color);
   text-align: center;
   padding: 200px 0;
 }
@@ -196,6 +206,7 @@ ul {
 .benefits-item {
   width: 270px;
 }
+
 /* .benefits-item + .benefits-item {
   margin-left: 30px;
 } */
