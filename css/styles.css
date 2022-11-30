@@ -105,9 +105,18 @@ ul {
 .auth-nav.list {
   margin-left: auto;
 }
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-envelope:hover {
+  fill: var(--accent-color);
+}
+
 .auth-nav .link {
   display: block;
-
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -121,6 +130,24 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.link.envelope {
+  display: flex;
+  align-items: center;
+}
+.icon-smartphone{
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-smartphone:hover{
+  fill: var(--accent-color);
+}
+.link.smartphone{
+  display: flex;
+  align-items: center;
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
@@ -206,18 +233,16 @@ ul {
 .benefits-item {
   width: 270px;
 }
-.benefits-item::before{
-  display: block;
-  content: "";
-background-image: url(../images/icons/Anthen.svg);
-background-color: var(--secondary-bgc-color);
-background-repeat: no-repeat;
-background-position: center;
-height: 120px;
-margin-bottom: 30px;
-
-
+.benefits-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bgc-color);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+    justify-content: center;
 }
+
 
 /* .benefits-item + .benefits-item {
   margin-left: 30px;
@@ -252,7 +277,7 @@ margin-bottom: 30px;
   justify-content: space-between;
 }
 .team .developer {
-  margin-bottom: 30px;
+  display: block;
 }
 .team-card {
   background-color: var(--white-color);
@@ -281,8 +306,79 @@ margin-bottom: 30px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
+.team-thumb {
+  padding: 30px 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #afb1b8;
+  
+}
+.social-icons:hover,
+.social-icons:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  
+}
+/* --Client-- */
+.client .title {
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.client-list {
+display: flex;
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid ;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.icon-client{
+  fill: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+}
+
+
+
 
 /* --Footer-- */
 .footer {
@@ -290,6 +386,10 @@ margin-bottom: 30px;
 }
 .footer {
   padding: 60px 0px;
+}
+.footer-nav {
+  display: flex;
+  align-items: baseline;
 }
 /* .footer-logo {
   color: var(--white-color);
@@ -334,6 +434,29 @@ margin-bottom: 30px;
 .site-nav .current {
   color: var(--accent-color);
 }
+
+/* --Connect-- */
+.connect {
+  margin-left: 70px;
+}
+.connect-icon {
+  background: rgba(255, 255, 255, 0.1);
+color: var(--white-color);
+}
+
+
+.connect-title {
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--white-color);
+margin-bottom: 20px;
+
+
+}
+/* .social-list.list {
+display: flex;
+} */
 
 /* PORTFOLIO HTML */
 .btn-filter.current-color {
